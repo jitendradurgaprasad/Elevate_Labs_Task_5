@@ -1,0 +1,29 @@
+DECISION TREE CLASSIFIER RESULTS
+==================================================
+
+Dataset shape: (302, 14)
+Training samples: 241
+Testing samples: 61
+
+Model configuration:
+DecisionTreeClassifier(random_state=42)
+
+Evaluation Metrics:
+Accuracy : 0.8033
+Precision: 0.8182
+Recall   : 0.8182
+F1-score : 0.8182
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  No Disease       0.79      0.79      0.79        28
+     Disease       0.82      0.82      0.82        33
+
+    accuracy                           0.80        61
+   macro avg       0.80      0.80      0.80        61
+weighted avg       0.80      0.80      0.80        61
+
+Confusion Matrix:
+[[22  6]
+ [ 6 27]]
