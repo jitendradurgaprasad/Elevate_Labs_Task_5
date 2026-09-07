@@ -1,0 +1,25 @@
+RANDOM FOREST FEATURE IMPORTANCE ANALYSIS
+=======================================================
+
+Feature importance ranking:
+
+ Feature  Importance
+      cp    0.173969
+ thalach    0.131634
+      ca    0.105700
+ oldpeak    0.096577
+    thal    0.090418
+     age    0.083049
+   exang    0.073679
+trestbps    0.072088
+    chol    0.067384
+     sex    0.040229
+   slope    0.029811
+ restecg    0.024301
+     fbs    0.011161
+
+Most important feature: cp
+Importance score: 0.173969
+
+Interpretation:
+Feature importance indicates the relative contribution of each feature to the Random Forest's predictive decisions. A higher importance score indicates that the feature contributed more to the model's decision-making process within this trained model. Feature importance should not be interpreted as proof of causal relationships.
