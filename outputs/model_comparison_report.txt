@@ -1,0 +1,23 @@
+FINAL MODEL COMPARISON REPORT
+======================================================================
+
+Models evaluated:
+1. Controlled Decision Tree (max_depth=3)
+2. Random Forest (100 estimators)
+
+Test-set performance:
+
+                   Model  Accuracy  Precision  Recall     F1
+Controlled Decision Tree    0.8033     0.7838  0.8788 0.8286
+           Random Forest    0.7541     0.7647  0.7879 0.7761
+
+5-Fold Cross-Validation performance:
+
+                   Model  Accuracy_Mean  Accuracy_Std  Precision_Mean  Precision_Std  Recall_Mean  Recall_Std  F1_Mean   F1_Std
+Controlled Decision Tree       0.767978      0.068229        0.763357       0.067834     0.841856    0.068425 0.798418 0.051783
+           Random Forest       0.824699      0.036965        0.832575       0.047794     0.853598    0.081427 0.839963 0.038536
+
+Conclusion:
+Based on the mean cross-validation F1-score, the better-performing model in this experiment is Random Forest, with a mean F1-score of 0.8400.
+
+Model selection should consider both predictive performance and model complexity. The controlled Decision Tree provides a simpler and more interpretable model, while the Random Forest uses an ensemble of decision trees and can provide more robust predictions in many datasets.
