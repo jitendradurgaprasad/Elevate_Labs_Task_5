@@ -1,0 +1,38 @@
+CONTROLLED DECISION TREE RESULTS
+==================================================
+
+Dataset shape: (302, 14)
+Training samples: 241
+Testing samples: 61
+
+Model configuration:
+DecisionTreeClassifier(max_depth=3, random_state=42)
+
+Maximum depth: 3
+Actual tree depth: 3
+Number of leaves: 8
+
+Evaluation Metrics:
+Training Accuracy: 0.8589
+Testing Accuracy : 0.8033
+Accuracy Gap     : 0.0556
+Precision        : 0.7838
+Recall           : 0.8788
+F1-score         : 0.8286
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  No Disease       0.83      0.71      0.77        28
+     Disease       0.78      0.88      0.83        33
+
+    accuracy                           0.80        61
+   macro avg       0.81      0.80      0.80        61
+weighted avg       0.81      0.80      0.80        61
+
+Confusion Matrix:
+[[20  8]
+ [ 4 29]]
+
+Interpretation:
+The Decision Tree depth was restricted to 3 based on the depth analysis. This substantially reduces the training-testing accuracy gap compared with the unrestricted tree while maintaining the same observed test accuracy on the selected train-test split.
