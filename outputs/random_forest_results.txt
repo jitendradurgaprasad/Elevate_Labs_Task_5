@@ -1,0 +1,29 @@
+RANDOM FOREST CLASSIFIER RESULTS
+==================================================
+
+Dataset shape: (302, 14)
+Training samples: 241
+Testing samples: 61
+
+Model configuration:
+RandomForestClassifier(n_estimators=100, random_state=42)
+
+Evaluation Metrics:
+Accuracy : 0.7541
+Precision: 0.7647
+Recall   : 0.7879
+F1-score : 0.7761
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  No Disease       0.74      0.71      0.73        28
+     Disease       0.76      0.79      0.78        33
+
+    accuracy                           0.75        61
+   macro avg       0.75      0.75      0.75        61
+weighted avg       0.75      0.75      0.75        61
+
+Confusion Matrix:
+[[20  8]
+ [ 7 26]]
